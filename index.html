@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf's Steak House &amp; Seafood</title>
-  
+    <title>Golf's Steak House - Gift Certificates</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            margin: 0px;
+            margin: 0;
             font-family: 'Nunito', sans-serif;
             color: #333;
-            font-size: 22px; 
             line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
         }
 
         header {
@@ -28,10 +30,6 @@
         .logo-placeholder img {
             width: 150px;
             height: auto;
-        }
-
-        nav {
-            transform: translateX(-40px); 
         }
 
         nav ul {
@@ -49,7 +47,7 @@
             text-decoration: none;
             color: #000;
             font-weight: bold;
-            font-size: 1rem; 
+            font-size: 1rem;
             white-space: nowrap;
         }
 
@@ -59,9 +57,7 @@
 
         .hero-section {
             position: relative;
-            text-align: left;
-            color: white;
-            background: url("16bb0a3ab8ea98cfe8906135767f7bf4 (1).webp") no-repeat center center;
+            background: url('42411392.jpg') no-repeat center center;
             background-size: cover;
             height: 600px;
             display: flex;
@@ -73,180 +69,192 @@
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 5px;
-            width: fit-content;
+            text-align: right;
+            margin-left: auto;
         }
 
         .hero-overlay h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-family: 'Lora', serif;
-            text-align: right; 
+            color: white;
         }
 
-        .hero-overlay .book-button {
-            margin-top: 20px; 
-            background-color: #b11b1b;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            text-align: center;
-            display: block; 
+        .hero-overlay p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: white;
         }
 
-        .hero-overlay .book-button:hover {
-            background-color: #a00a0a;
-        }
-
-        .section {
-            text-align: center;
+        .content {
             padding: 40px 20px;
         }
 
-        .section h2 {
+        .content h2 {
+            text-align: center;
             margin-bottom: 20px;
             font-size: 2rem;
             font-family: 'Lora', serif;
+            color: #b11b1b;
         }
 
-        .section p {
-            margin: 0 auto 20px auto;
-            max-width: 800px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .gallery {
+        .gift-options {
             display: flex;
+            gap: 30px;
             justify-content: center;
-            gap: 15px;
             margin-top: 40px;
         }
 
-        .gallery img {
-            width: 200px;
-            height: auto;
-            margin-top: 40px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        .gift-card {
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
         }
 
-        .menu-button {
+        .gift-card h3 {
+            font-size: 1.5rem;
+            color: #b11b1b;
+        }
+
+        .gift-card p {
+            margin: 10px 0 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .gift-card a {
+            display: inline-block;
+            margin-top: 15px;
             background-color: #b11b1b;
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
             border-radius: 5px;
-            display: inline-block;
-            margin-top: 100px;
-            margin-bottom: 120px; 
         }
 
-        .menu-button:hover {
+        .gift-card a:hover {
             background-color: #a00a0a;
         }
 
-        footer {
-            background-color: #f8f8f8;
-            padding: 20px 0 40px; /* Added extra padding to create space below */
+        .balance-checker {
             text-align: center;
-            font-size: 0.9em;
-            border-top: 1px solid #ddd;
+            margin-top: 70px; /* Larger top margin */
         }
 
-        footer p {
-            margin: 10px 0; /* Added more space between footer paragraphs */
+        .balance-checker button {
+            background-color: #b11b1b;
+            color: white;
             font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            padding: 10px 20px; /* Same size as other buttons */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .balance-checker button:hover {
+            background-color: #a00a0a;
+        }
+
+        .balance-checker p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
         }
 
         footer ul {
             list-style: none;
             padding: 0;
-            margin: 10px 0 0 0;
+            margin: 0;
             display: flex;
             justify-content: center;
             gap: 15px;
+        }
+
+        footer ul li {
+            margin: 0;
         }
 
         footer ul li a {
             text-decoration: none;
             color: #b11b1b;
             font-weight: bold;
-            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
         }
 
         footer ul li a:hover {
-            color: #a00a0a;
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
+    <header>
+        <a href="https://k3nzie8818.github.io/golfs-steakhouse-home/" class="logo-placeholder">
+            <img src="Golf's High Res Logo clear bkgd.avif" alt="Golf's Steak House Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="https://k3nzie8818.github.io/golfs-steakhouse-menu/">Menu</a></li>
+                <li><a href="#">Banquet Halls & Facilities</a></li>
+                <li><a href="https://k3nzie8818.github.io/golfs-steakhouse-gift-certificates/">Gift Certificates</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="https://www.opentable.ca/golfs-steak-house-and-seafood">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <a href="https://k3nzie8818.github.io/golfs-steakhouse-home/" class="logo-placeholder">
-        <img src="Golf's High Res Logo clear bkgd.avif" alt="Logo" id="logo-image" style="width: 150px; height: auto;"> 
-    </a>
-    <nav>
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <h1>Gift Certificates</h1>
+            <p>Give the gift of a memorable dining experience with Golf's Steak House.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Choose Your Gift Option</h2>
+        <div class="gift-options">
+            <div class="gift-card">
+                <h3>E-Gift Cards</h3>
+                <p>Our eGift Cards are designed for ultimate convenience—you’ll never have to worry about leaving it behind! Instantly delivered to your inbox, they’re always accessible on your phone, making it easy to enjoy an exceptional dining experience anytime.</p>
+                <a href="#">Click Here to Purchase!</a>
+            </div>
+            <div class="gift-card">
+                <h3>Physical Gift Cards</h3>
+                <p>Give a timeless, tangible gift with our physical gift cards. Beautifully presented, they’re perfect for any occasion and provide a thoughtful touch for those who appreciate the tradition of a classic gift.</p>
+                <a href="#">Click Here to Purchase!</a>
+            </div>
+        </div>
+        <div class="balance-checker">
+            <button>Balance Checker</button>
+            <p>Please email or call us at (519) 579-4050 to check your balance.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>598 Lancaster Street West, Kitchener, Ontario, Canada</p>
+        <p>(519) 579-4050</p>
+        <p>Open at 4 PM Daily (Office Open at 10 AM)</p>
         <ul>
-            <li><a href="https://k3nzie8818.github.io/golfs-steakhouse-menu/">Menu</a> 
-            </li>
-            <li><a href="#">Banquet Halls &amp; Facilities</a> <!-- Add link here -->
-            </li>
-            <li><a href="#">Gift Certificates</a> <!-- Add link here -->
-            </li>
-            <li><a href="#">Contact Us</a> <!-- Add link here -->
-            </li>
-            <li><a href="https://www.opentable.ca/golfs-steak-house-and-seafood">Reservations</a> 
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Banquet Halls/Facilities</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Reservations</a></li>
         </ul>
-    </nav>
-</header>
-
-<div class="hero-section">
-    <div class="hero-overlay">
-        <h1>Serving the KW for over 45 years</h1>
-        <a href="https://www.opentable.ca/golfs-steak-house-and-seafood" class="book-button">Book a Table</a> 
-    </div>
-</div>
-
-<section class="section">
-    <h2>A dining destination where tradition meets excellence</h2>
-    <p>
-        Nestled along the picturesque Grand River, we've proudly served the community since 1975 with a commitment to quality, comfort, and exceptional hospitality. Our menu features carefully selected steaks, fresh seafood, and timeless classics crafted to perfection.
-    </p>
-    <p>
-        Whether you're joining us for a romantic dinner, a family celebration, or a corporate event, we offer a warm, inviting atmosphere and stunning views that elevate every experience. At Golf's Steak House, we're more than a restaurant—we're a cherished part of your most memorable moments.
-    </p>
-
-    <div class="gallery">
-        <img src="109363147_588541282100795_4155822852104742841_n.jpg" alt="Dining view 1">
-        <img src="116578424_207677690686088_5325255179640238390_n.jpg" alt="Dining view 2">
-        <img src="75349251_2250723538560510_565849742281034596_n.jpg" alt="Dining view 3">
-        <img src="solarium-seating.jpg" alt="Dining view 4">
-    </div>
-
-    <a href="https://k3nzie8818.github.io/golfs-steakhouse-menu/" class="menu-button">See Our Dinner Menu</a>
-</section>
-
-<footer>
-    <p>598 Lancaster Street West, Kitchener, Ontario, Canada</p>
-    <p>(519) 579-4050</p>
-    <p>Open at 4 PM Daily (Office Open at 10 AM)</p>
-    <ul>
-        <li><a href="https://k3nzie8818.github.io/golfs-steakhouse-home/">Home</a> 
-        </li>
-        <li><a href="https://k3nzie8818.github.io/golfs-steakhouse-menu/">Menu</a> 
-        </li>
-        <li><a href="#">Banquet Halls/Facilities</a> <!-- Add link here -->
-        </li>
-        <li><a href="#">Gift Cards</a> <!-- Add link here -->
-        </li>
-        <li><a href="#">Contact Us</a> <!-- Add link here -->
-        </li>
-        <li><a href="#">Reservations</a> <!-- Add link here -->
-        </li>
-    </ul>
-</footer>
-
+    </footer>
 </body>
 </html>
