@@ -57,33 +57,39 @@
 
         .hero-section {
             position: relative;
-            background: url('42411392.jpg') no-repeat center center;
+            background: url('42411392 (1).jpg') no-repeat center center;
             background-size: cover;
             height: 600px;
             display: flex;
             align-items: flex-end;
-            padding: 20px;
+            padding: 0;
         }
 
         .hero-overlay {
             background-color: rgba(0, 0, 0, 0.5);
+            color: white;
             padding: 20px;
-            border-radius: 5px;
-            text-align: right;
-            margin-left: auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
         }
 
         .hero-overlay h1 {
             margin: 0;
             font-size: 2.5rem;
             font-family: 'Lora', serif;
-            color: white;
         }
 
         .hero-overlay p {
-            margin-top: 10px;
+            margin: 10px 0 0;
             font-size: 1.2rem;
-            color: white;
         }
 
         .content {
@@ -109,7 +115,6 @@
             max-width: 400px;
             text-align: center;
             padding: 20px;
-            border-radius: 5px;
         }
 
         .gift-card h3 {
@@ -130,7 +135,6 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            border-radius: 5px;
         }
 
         .gift-card a:hover {
@@ -139,21 +143,23 @@
 
         .balance-checker {
             text-align: center;
-            margin-top: 70px; /* Larger top margin */
+            margin-top: 70px;
         }
 
-        .balance-checker button {
+        .balance-checker a {
             background-color: #b11b1b;
             color: white;
             font-family: 'Nunito', sans-serif;
             font-size: 1rem;
-            padding: 10px 20px; /* Same size as other buttons */
+            padding: 10px 20px;
+            text-decoration: none;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-top: 15px;
         }
 
-        .balance-checker button:hover {
+        .balance-checker a:hover {
             background-color: #a00a0a;
         }
 
@@ -178,10 +184,6 @@
             display: flex;
             justify-content: center;
             gap: 15px;
-        }
-
-        footer ul li {
-            margin: 0;
         }
 
         footer ul li a {
@@ -228,18 +230,20 @@
         <div class="gift-options">
             <div class="gift-card">
                 <h3>E-Gift Cards</h3>
-                <p>Our eGift Cards are designed for ultimate convenience—you’ll never have to worry about leaving it behind! Instantly delivered to your inbox, they’re always accessible on your phone, making it easy to enjoy an exceptional dining experience anytime.</p>
-                <a href="#">Click Here to Purchase!</a>
+                <p>Our eGift Cards are designed for ultimate convenience—you’ll never have to worry about leaving it behind!</p>
+                <a href="https://order.toasttab.com/egiftcards/golfs-steakhouse-and-seafood-598-lancaster-st-w" target="_blank">Click Here to Purchase!</a>
             </div>
             <div class="gift-card">
                 <h3>Physical Gift Cards</h3>
-                <p>Give a timeless, tangible gift with our physical gift cards. Beautifully presented, they’re perfect for any occasion and provide a thoughtful touch for those who appreciate the tradition of a classic gift.</p>
-                <a href="#">Click Here to Purchase!</a>
+                <p>Give a timeless, tangible gift with our physical gift cards. Beautifully presented for any occasion.</p>
+              <p>
+                Come visit us in person to purchase a physical card!
+              </p>
             </div>
         </div>
         <div class="balance-checker">
-            <button>Balance Checker</button>
-            <p>Please email or call us at (519) 579-4050 to check your balance.</p>
+            <p>Use our balance checker or give us a call at (519) 579-4050!</p>
+            <a href="https://www.toasttab.com/golfs-steakhouse-and-seafood-598-lancaster-st-w/findcard" target="_blank">Balance Checker</a>
         </div>
     </div>
 
